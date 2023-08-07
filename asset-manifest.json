@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/liczenie/static/css/main.3b47c722.css",
+    "main.js": "/liczenie/static/js/main.28daa6bb.js",
+    "static/js/787.c9d830cc.chunk.js": "/liczenie/static/js/787.c9d830cc.chunk.js",
+    "index.html": "/liczenie/index.html",
+    "main.3b47c722.css.map": "/liczenie/static/css/main.3b47c722.css.map",
+    "main.28daa6bb.js.map": "/liczenie/static/js/main.28daa6bb.js.map",
+    "787.c9d830cc.chunk.js.map": "/liczenie/static/js/787.c9d830cc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3b47c722.css",
+    "static/js/main.28daa6bb.js"
+  ]
+}
