@@ -1,13 +1,173 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif,
     monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* body {
+  font-family: 'Poppins', sans-serif;
+} */
+
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  border: 3px solid rgb(70, 70, 70);
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+
+}
+
+.pickMain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pickArticle {
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  display: grid;
+  margin: 30px auto;
+  overflow: auto;
+  border: 3px solid rgb(70, 70, 70);
+  padding: 30px;
+  border-radius: 5px;
+  width: 360px;
+}
+
+.pickPeople {
+  align-content: center;
+  text-align: center;
+  display: grid;
+  margin: 30px auto;
+  overflow: auto;
+  border: 3px solid rgb(70, 70, 70);
+  padding: 30px;
+  border-radius: 5px;
+  width: 360px;
+}
+
+.choose {
+  align-content: center;
+  margin: 30px auto;
+  overflow: auto;
+  border: 3px solid rgb(70, 70, 70);
+  padding: 30px;
+  border-radius: 5px;
+  min-width: 360px;
+}
+
+.results {
+  text-align: center;
+  align-content: center;
+  margin: 30px auto;
+  overflow: auto;
+  border: 3px solid rgb(70, 70, 70);
+  padding: 30px;
+  border-radius: 5px;
+  min-width: 360px;
+}
+
+.peopleList {
+  display: flex;
+  text-shadow: 0px 0px 1px white,
+  1px 1px 1px white,
+  1px -1px 1px white,
+  -1px 1px 1px white,
+  -1px -1px 1px white;
+}
+
+.personName {
+  margin: auto;
+  text-align: center;
+  flex: 1;
+  overflow: hidden;
+}
+
+.singleArticle {
+  display: flex;
+}
+
+.singleArticleEven {
+  filter: brightness(85%);
+}
+
+.articleCheckbox {
+  margin: auto;
+  text-align: center;
+}
+
+.flexGrid {
+  flex: 1;
+  overflow: hidden;
+}
+
+.showInformation {
+  margin: auto;
+  text-align: left;
+  background-color: rgb(238, 238, 238);
+}
+
+.articleOwner {
+  margin: auto;
+  text-align: left;
+  background-color: rgb(238, 238, 238);
+}
+
+.btn {
+  display: inline-block;
+  background: #4d4d4d;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:focus {
+  outline: none;
+  background: #b30404;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.showInfo {
+  background-color: lightgrey;
+  padding: 4px;
+  border-radius: 3px;
+  position:absolute;
+  width: 100px;
+  font-size: 12px;
 }
