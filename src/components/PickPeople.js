@@ -10,7 +10,7 @@ const PickPeople = ({ addName }) => {
       if (!response.ok) {
         throw new Error("Network response was not ok");
       }
-      const data = await response.json(); // `await` was missing here
+      const data = await response.json();
       console.log(data);
     } catch (error) {
       console.error("Fetch error:", error);
@@ -19,7 +19,10 @@ const PickPeople = ({ addName }) => {
 
   const uploadData = async () => {
     try {
-      const data = { name: name };
+      const data = {
+        name: name,
+        date: new Date(),
+      };
 
       const response = await fetch("https://liczenie-express.adaptable.app", {
         method: "POST",
