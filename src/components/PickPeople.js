@@ -59,7 +59,7 @@ const getData = async () => {
   return (
     <div className="pickPeople">
       <form onSubmit={onSubmit}>
-        <p>Dodaj osobę:</p>
+        <p onClick={() => getData()} >Dodaj osobę:</p>
         <br></br>
         <br></br>
         <div style={{display:'flex', justifyContent:'center'}}>
